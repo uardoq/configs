@@ -1,0 +1,4 @@
+set number relativenumber	
+
+vmap <leader>y "+y
+nmap <leader>p "+p

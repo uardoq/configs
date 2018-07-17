@@ -1,0 +1,18 @@
+set ssl_starttls=yes
+set ssl_force_tls=yes
+set imap_user=$mutt_0_user
+set imap_pass=$mutt_0_pass
+set from=$mutt_0_email
+set realname=$mutt_0_name
+set folder=imaps://imap.gmail.com/
+set spoolfile=imaps://imap.gmail.com/INBOX
+set postponed="imaps://imap.gmail.com/[Gmail]/Drafts"
+set header_cache="~/.mutt/" $mutt_0_email_dir "/cache/headers"
+set message_cachedir="~/.mutt/" $mutt_0_email_dir "/cache/bodies"
+
+set certificate_file="~/.mutt/" $mutt_0_email_dir "/certificates"
+set smtp_url="smtps://" $mutt_0_email ":" $mutt_0_pass "@smtp.gmail.com:465/"
+
+set move=no
+set imap_keepalive=900
+
